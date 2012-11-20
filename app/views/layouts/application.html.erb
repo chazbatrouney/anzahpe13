@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Anzahpe13Com</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Australian & New Zealand Association for Health Professional Educators (ANZAHPE) 2013 Conference</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :all %>
+  <%= csrf_meta_tag %>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
+  <div id="content">
+    <h1>Australian & New Zealand Association for Health Professional Educators (ANZAHPE) 2013 Conference</h1>
 
-<%= yield %>
+    <%= yield %>
 
+  </div>
 </body>
 </html>
