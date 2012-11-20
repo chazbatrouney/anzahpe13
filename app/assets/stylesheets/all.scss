@@ -1,5 +1,7 @@
 // sizes
 $page_width: 955px;
+$margin_left: 450px;
+$margin_top: 150px;
 
 // css import
 @import 'reset';
@@ -11,3 +13,49 @@ html, body {
 }
 
 // layout styles
+body {
+  min-width: $page_width;
+  background: white url(colour-graphic.png) top left no-repeat;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+#content {
+  width: 600px;
+  position: relative;
+  top: $margin_top;
+  left: $margin_left;
+}
+
+#header {
+  color: white;
+  position: relative;
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+    h1 {
+      font-size: 15px;
+      line-height: 20px;
+    }
+}
+
+// paragraph styles
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  clear: both;
+  padding: 5px 0px 20px;
+  text-transform: uppercase;
+}
+
+#title {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+p {
+  margin:5px 0 5px;
+}
