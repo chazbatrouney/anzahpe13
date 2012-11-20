@@ -1,0 +1,13 @@
+// sizes
+$page_width: 955px;
+
+// css import
+@import 'reset';
+@import 'helpers';
+
+// make the content stretch to fill the window
+html, body {
+  height: 100%;
+}
+
+// layout styles
