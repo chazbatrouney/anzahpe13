@@ -12,12 +12,14 @@
 
 // sizes
 $page_width: 955px;
-$margin_left: 450px;
+$margin_left: 420px;
 $margin_top: 150px;
 
 // css import
 @import 'reset';
 @import 'helpers';
+@import 'compass/css3/transition';
+@import 'compass/css3/transform';
 
 // make the content stretch to fill the window
 html, body {
@@ -54,12 +56,23 @@ body {
 // navigation
 #nav {
   position: absolute;
-  left: $margin_left+50px;
-  width: 581px;
-  height: 106px;
+  left: $margin_left;
+  width: 600px;
+  height: 136px;
   > a {
-    display: block;
-    position: absolute;
+      display: block;
+      position: absolute;
+      top: -70px;
+      opacity: 0.9;
+      @include transition(top 600ms ease-in 0);
+    &:hover {
+      top: 0;
+      opacity: 1.0;
+      }
+    &.current {
+      top: 0;
+      opacity: 1.0;
+    }
   }
   h2 {
     display: none;
@@ -68,36 +81,37 @@ body {
 
 #program {
   background: url(program.png);
-  width: 165px;
-  height: 104px;
+  width: 146px;
+  height: 136px;
+  left: 3px;
 }
 
 #sponsors {
   background: url(sponsors.png);
-  width: 171px;
-  height: 91px;
-  left: 90px;
+  width: 163px;
+  height: 122px;
+  left: 108px;
 }
 
 #register {
   background: url(register.png);
-  width: 193px;  
-  height: 106px;
-  left: 220px
+  width: 166px;  
+  height: 128px;
+  left: 229px;
 }
 
 #host {
   background: url(host.png);
-  width: 153px;
-  height: 99px;
-  left: 330px;
+  width: 125px;
+  height: 130px;
+  left: 359px;
 }
 
 #contact {
   background: url(contact.png);
-  width: 156px;
-  height: 91px;
-  left: 424px;
+  width: 158px;
+  height: 122px;
+  left: 445px;
 }
 
 // paragraph styles
