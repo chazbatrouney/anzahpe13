@@ -20,6 +20,7 @@ $margin_top: 150px;
 @import 'helpers';
 @import 'compass/css3/transition';
 @import 'compass/css3/transform';
+@import 'compass/css3/opacity';
 
 // make the content stretch to fill the window
 html, body {
@@ -65,13 +66,14 @@ body {
       top: -70px;
       opacity: 0.9;
       @include transition(top 600ms ease-in 0);
+      @include opacity(0.9);
     &:hover {
       top: 0;
-      opacity: 1.0;
+      @include opacity(1.0);
       }
     &.current {
       top: 0;
-      opacity: 1.0;
+      @include opacity(1.0);
     }
   }
   h2 {
