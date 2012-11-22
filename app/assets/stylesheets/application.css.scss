@@ -51,6 +51,55 @@ body {
     }
 }
 
+// navigation
+#nav {
+  position: absolute;
+  left: $margin_left+50px;
+  width: 581px;
+  height: 106px;
+  > a {
+    display: block;
+    position: absolute;
+  }
+  h2 {
+    display: none;
+  }
+}
+
+#program {
+  background: url(program.png);
+  width: 165px;
+  height: 104px;
+}
+
+#sponsors {
+  background: url(sponsors.png);
+  width: 171px;
+  height: 91px;
+  left: 90px;
+}
+
+#register {
+  background: url(register.png);
+  width: 193px;  
+  height: 106px;
+  left: 220px
+}
+
+#host {
+  background: url(host.png);
+  width: 153px;
+  height: 99px;
+  left: 330px;
+}
+
+#contact {
+  background: url(contact.png);
+  width: 156px;
+  height: 91px;
+  left: 424px;
+}
+
 // paragraph styles
 h1 {
   font-size: 40px;

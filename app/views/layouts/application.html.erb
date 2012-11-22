@@ -11,6 +11,23 @@
   <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
+  <div id="nav">
+    <%= link_to main_program_path, :id => 'program' do %>
+      <h2>Program</h2>
+    <% end %>
+    <%= link_to main_sponsors_path, :id => 'sponsors' do %>
+      <h2>Sponsors</h2>
+    <% end %>
+    <%= link_to main_register_path, :id => 'register' do %>
+      <h2>Register</h2>
+    <% end %>
+    <%= link_to main_host_path, :id => 'host' do %>
+      <h2>Host</h2>
+    <% end %>
+    <%= link_to main_contact_path, :id => 'contact' do %>
+      <h2>Contact</h2>
+    <% end %>
+  </div>
   <div id="header">
     <h1>ANZAHPE LOGO?</h1>
   </div>
