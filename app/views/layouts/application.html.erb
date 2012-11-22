@@ -12,19 +12,19 @@
 </head>
 <body>
   <div id="nav">
-    <%= link_to main_program_path, :id => 'program' do %>
+    <%= link_to main_program_path, :id => 'program', :class => current_page?(main_program_path) ? 'current' : '' do %>
       <h2>Program</h2>
     <% end %>
-    <%= link_to main_sponsors_path, :id => 'sponsors' do %>
+    <%= link_to main_sponsors_path, :id => 'sponsors', :class => current_page?(main_sponsors_path) ? 'current' : '' do %>
       <h2>Sponsors</h2>
     <% end %>
-    <%= link_to main_register_path, :id => 'register' do %>
+    <%= link_to main_register_path, :id => 'register', :class => current_page?(main_register_path) ? 'current' : '' do %>
       <h2>Register</h2>
     <% end %>
-    <%= link_to main_host_path, :id => 'host' do %>
+    <%= link_to main_host_path, :id => 'host', :class => current_page?(main_host_path) ? 'current' : '' do %>
       <h2>Host</h2>
     <% end %>
-    <%= link_to main_contact_path, :id => 'contact' do %>
+    <%= link_to main_contact_path, :id => 'contact', :class => current_page?(main_contact_path) ? 'current' : '' do %>
       <h2>Contact</h2>
     <% end %>
   </div>
