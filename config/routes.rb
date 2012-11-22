@@ -1,4 +1,14 @@
 Anzahpe13Com::Application.routes.draw do
+  get "main/sponsors"
+
+  get "main/register"
+
+  get "main/host"
+
+  get "main/contact"
+
+  get "main/program"
+
   get "main/index"
   root :to => "main#index"
 
