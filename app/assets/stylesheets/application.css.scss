@@ -65,7 +65,7 @@ body {
       position: absolute;
       top: -70px;
       opacity: 0.9;
-      @include transition(top 600ms ease-in 0);
+      @include transition(top 600ms ease-in);
       @include opacity(0.9);
     &:hover {
       top: 0;
