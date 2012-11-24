@@ -29,9 +29,10 @@ html, body {
 // layout styles
 body {
   min-width: $page_width;
-  background: white url(colour-graphic.png) top left no-repeat;
-  font-family: Helvetica, sans-serif;
+  background: white url(colour-graphic-shaddow.png) top left no-repeat;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 13px;
+  color: #333333;
 }
 
 #content {
