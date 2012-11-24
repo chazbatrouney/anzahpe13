@@ -13,7 +13,7 @@
 // sizes
 $page_width: 955px;
 $margin_left: 420px;
-$margin_top: 150px;
+$margin_top: 0;
 
 // css import
 @import 'reset';
@@ -40,6 +40,7 @@ body {
   position: relative;
   top: $margin_top;
   left: $margin_left;
+  padding: 0px 50px 100px 0;
 }
 
 #header {
@@ -115,13 +116,14 @@ body {
   left: 445px;
 }
 
-// paragraph styles
+// paragraph and heading styles
 h1 {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 700;
   clear: both;
-  padding: 5px 0px 20px;
+  margin-bottom: 20px;
   text-transform: uppercase;
+  color: black;
 }
 
 #title {
@@ -129,9 +131,75 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #20709F;
+  text-transform: capitalize
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: -5px;
+}
+
+h4 {
+  font-weight: 700;
+  margin-bottom: -10px;
 }
 
 p {
-  margin:5px 0 5px;
+  margin:12px 0 12px;
+  line-height: 20px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	_vertical-align: bottom;
+	position: relative;
+	
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+.notify {
+  color: #E0007D;
+  font-weight: 600
+}
+
+//list-styles
+ul {
+  margin: 10px 50px 10px 30px;
+}
+
+li {
+  list-style: url(bullet.png);
+}
+
+//table styles
+dt {
+  float: left;
+  clear: left;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+dd {
+  margin-left: 300px;
+  margin-bottom: 3px;
 }
