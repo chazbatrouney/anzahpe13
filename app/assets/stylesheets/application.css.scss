@@ -233,3 +233,26 @@ dd {
   margin-left: 300px;
   margin-bottom: 3px;
 }
+
+.striped {
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 10px;
+  caption {
+    text-align: left;
+    padding-bottom: 5px;
+    font-weight: 700;
+    font-size: 11px;
+    color: #B3B3B3;
+  }
+  tr, th, td {
+    border: 1px solid #B3B3B3;
+    padding: 10px;
+  }
+  th {
+    font-weight: 700;
+  }
+  tbody tr:nth-child(2n+1) {
+    background: #FCE8F2;
+  }
+}
