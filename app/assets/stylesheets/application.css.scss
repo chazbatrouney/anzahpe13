@@ -136,7 +136,19 @@ h2 {
   margin-top: 20px;
   margin-bottom: 15px;
   color: #20709F;
-  text-transform: capitalize
+  text-transform: capitalize;
+  &.dates, &.location {
+    color: black;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  &.dates {
+    margin-top: -40px;
+    font-size: 40px;
+  }
+  &.location {
+    font-size: 20px;
+  }
 }
 
 h3 {
