@@ -191,12 +191,12 @@ sub {
 
 .notify {
   color: #E0007D;
-  font-weight: 600
+  font-weight: 700
 }
 
 //links
 a {
-  color: #E0007D;
+  color: #20709F;
   text-decoration: none;
   border: none;
   outline: none;
@@ -206,15 +206,17 @@ a {
   }
   &:hover {
     text-decoration: underline;
-    color: #20709F;
+    color: #E0007D;
   }
   &.button {
-    padding: 5px;
+    padding: 5px 7px 5px 7px;
     margin: 5px 5px 5px 0;
     background-color: #20709F;
     display: inline-block;
     color: white !important;
     text-decoration: none !important;
+    font-weight: 600;
+    vertical-align: middle;
     @include text-shadow(1px 1px 0px rgba(0, 0, 0, 0.3));
     @include border-radius(4px);
     @include background-image(linear-gradient(top, #2088C3, #20709F));
@@ -222,6 +224,13 @@ a {
       @include background-image(linear-gradient(top, #E0007D, #B60766));
       @include transition(all 150ms linear);
       @include box-shadow(0px 0px 10px #B60766);
+    }
+    &:after {
+      content: ">";
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0 0 0 7px;
+      color: white;
     }
   }
 }
