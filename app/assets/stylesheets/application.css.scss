@@ -209,27 +209,50 @@ a {
     color: #E0007D;
   }
   &.button {
-    padding: 5px 7px 5px 7px;
+    padding: 9px 10px 10px 10px;
     margin: 5px 5px 5px 0;
     background-color: #20709F;
     display: inline-block;
     color: white;
+    font-size: 14px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     vertical-align: middle;
     @include text-shadow(1px 1px 0px rgba(0, 0, 0, 0.3));
     @include border-radius(4px);
+    @include transition(all 200ms linear);
     @include background-image(linear-gradient(top, #2088C3, #20709F));
     &:hover {
-      @include background-image(linear-gradient(top, #E0007D, #B60766));
-      @include transition(all 150ms linear);
-      @include box-shadow(0px 0px 10px #B60766);
+      @include box-shadow(0px 0px 20px #B60766);
+      background-color: #E0007D;
     }
     &:after {
       content: ">";
       font-size: 12px;
       font-weight: 700;
       margin: 0 0 0 7px;
+      color: white;
+    }
+  }
+  &.document {
+    @include border-radius (4px);
+    @include transition(background 150ms linear);
+    background: #2088C3 url(icon-document.png) center left no-repeat;
+    display: inline-block;
+    border: 0px;
+    padding: 8px 14px 8px 36px;
+    margin: 12px 10px 12px 0;
+    color: white;
+    font-weight: 600;
+    text-decoration:none;
+    &:hover, &:focus {
+      background-color: #20709F;
+    }
+    &:visited {
+      color: white;
+      border: none;
+    }
+    &:visited:hover {
       color: white;
     }
   }
