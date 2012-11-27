@@ -58,5 +58,15 @@ module Anzahpe13Com
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # anything ending in / to the same without the '/'
+    config.middleware.insert_before(Rack::Lock, Rack::Rewrite) do
+    r301 %r{(.+)/$}, '$1'
+    
+    # www.anzahpe13.com -> anzahpe13.com (remove the www subdomain)
+    r301 %r{.*}, 'http://anzahpe13.com$&', :if => Proc.new { |rack_env|
+      ['www.anzahpe13.com'].include?(rack_env['SERVER_NAME'])
+    }
+    end
   end
 end
