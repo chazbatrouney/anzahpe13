@@ -135,6 +135,7 @@ h2 {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 15px;
+  clear: both;
   color: #20709F;
   text-transform: capitalize;
   &.dates, &.location {
@@ -152,6 +153,7 @@ h2 {
 }
 
 h3 {
+  clear: both;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 0;
@@ -192,6 +194,15 @@ sub {
 .notify {
   color: #E0007D;
   font-weight: 700
+}
+
+.cavet {
+  font-size: 10px;
+}
+
+.float {
+  float: left;
+  margin-right: 50px;
 }
 
 //links
@@ -281,10 +292,16 @@ a {
 //list-styles
 ul {
   margin: 10px 50px 15px 30px;
+  li {
+  list-style: url(bullet.png);
+  }
 }
 
-li {
-  list-style: url(bullet.png);
+ol {
+  margin: 10px 50px 15px 30px;
+  li {
+    list-style:decimal;
+  }
 }
 
 //table styles
@@ -317,6 +334,7 @@ dd {
   }
   th {
     font-weight: 700;
+    text-align: center;
   }
   tbody tr:nth-child(2n+1) {
     background: #FCE8F2;
