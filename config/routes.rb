@@ -1,4 +1,6 @@
 Anzahpe13Com::Application.routes.draw do
+  match 'sitemap.xml' => 'sitemaps#sitemap'
+
   get "main/sponsors"
 
   get "main/register"

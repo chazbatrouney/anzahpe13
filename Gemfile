@@ -16,6 +16,7 @@ end
 gem 'sass'
 gem 'json'
 gem 'rack-rewrite'
+gem 'dynamic_sitemaps'
 
 # Gems used only for assets and not required
 # in production environments by default.
