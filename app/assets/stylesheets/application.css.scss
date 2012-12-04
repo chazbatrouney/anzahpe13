@@ -180,7 +180,6 @@ sub {
 	vertical-align: baseline;
 	_vertical-align: bottom;
 	position: relative;
-	
 }
 
 sup {
@@ -203,6 +202,17 @@ sub {
 .float {
   float: left;
   margin-right: 50px;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 0;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.clear {
+  clear: both;
 }
 
 //links
@@ -339,4 +349,13 @@ dd {
   tbody tr:nth-child(2n+1) {
     background: #FCE8F2;
   }
+}
+
+//images
+.profile {
+  float: right;
+  margin: 5px 0 15px 15px;
+  padding: 3px;
+  border: solid 1px #d3d3d3;
+  clear: left;
 }
