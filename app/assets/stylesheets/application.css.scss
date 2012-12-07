@@ -210,6 +210,7 @@ sub {
 
 .title {
   font-weight: 700;
+  color: #E0007D;
   margin-bottom: 0;
   font-size: 15px;
   margin-top: 20px;
@@ -232,6 +233,9 @@ a {
   &:hover {
     text-decoration: underline;
     color: #E0007D;
+  }
+  .sponsor {
+    color: #333333;
   }
   &.button {
     padding: 9px 10px 10px 10px;
@@ -362,4 +366,44 @@ dd {
   padding: 3px;
   border: solid 1px #d3d3d3;
   clear: left;
+}
+
+.sponsor {
+  margin: 20px 0 130px 51px;
+  float: left;
+  width: 166px;
+  height: 216px;
+  h2 {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 240px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    font-size: 11px;
+  }
+}
+
+.monash {
+  background: url(Monash-Uni.png) center center no-repeat;
+}
+
+.flinders {
+  background: url(Flinders-Uni-Logo.png) center center no-repeat;
+}
+
+.unimelb {
+  background: url(UoM-Logo.png) center center no-repeat;
+}
+
+.col {
+  float: left;
+  width: 275px;
+  margin-left: 50px;
+}
+
+.first {
+  margin-left: 0;
 }
