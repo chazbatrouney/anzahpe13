@@ -149,6 +149,7 @@ h2 {
   }
   &.location {
     font-size: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -363,8 +364,6 @@ dd {
 .profile {
   float: right;
   margin: 5px 0 15px 15px;
-  padding: 3px;
-  border: solid 1px #d3d3d3;
   clear: left;
 }
 
