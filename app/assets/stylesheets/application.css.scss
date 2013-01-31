@@ -55,6 +55,11 @@ body {
     }
 }
 
+hr {
+  border: 0;
+  clear: both;
+}
+
 // navigation
 #nav {
   position: absolute;
@@ -370,7 +375,7 @@ dd {
 }
 
 .sponsor {
-  margin: 20px 0 130px 51px;
+  margin: 20px 0 100px 51px;
   float: left;
   width: 166px;
   height: 216px;
@@ -397,6 +402,18 @@ dd {
 
 .unimelb {
   background: url(UoM-Logo.png) center center no-repeat;
+}
+
+.deakin {
+  background: url(Deakin-Uni.png) center center no-repeat;
+}
+
+.pcc4u {
+  background: url(PCC4U.png) center center no-repeat;
+}
+
+.tell {
+  background: url(TELL.png) center center no-repeat;
 }
 
 .col {
